@@ -102,7 +102,9 @@ def save_dict_to_json(data, filename="data.json"):
 
 def main():
     wallet_generator = WalletGenerator()
-    api_key = API_KEY
+    api_key1 = ...
+    api_key2 = ...
+    api_key3 = ...
 
     # here we can add different api, to use for each stream different api_key
 
@@ -111,12 +113,12 @@ def main():
     while looping:
         try:            
             tasks = [
-                    (wallet_brootforce, (wallet_generator, api_key)),
-                    (wallet_brootforce, (wallet_generator, api_key)),
-                    (wallet_brootforce, (wallet_generator, api_key)),
-                    (wallet_brootforce, (wallet_generator, api_key)),
-                    (wallet_brootforce, (wallet_generator, api_key)),
-                    (wallet_brootforce, (wallet_generator, api_key)),
+                    (wallet_brootforce, (wallet_generator, api_key1)),
+                    (wallet_brootforce, (wallet_generator, api_key2)),
+                    (wallet_brootforce, (wallet_generator, api_key3)),
+                    (wallet_brootforce, (wallet_generator, api_key1)),
+                    (wallet_brootforce, (wallet_generator, api_key2)),
+                    (wallet_brootforce, (wallet_generator, api_key3)),
                 ]
             
             with Pool(processes=2) as pool:  # Set 'processes' to the number of$
